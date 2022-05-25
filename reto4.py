@@ -3,6 +3,6 @@ def ordenes(rutinaContable:list):
    
     print ('------------------------ Inicio Registro diario ---------------------------------')
     for i in range(len(rutinaContable)):
-        print (f'La factura {rutinaContable[i][0]} tiene un total en pesos de {round( totales[i] if totales[i] >= 600000 else (totales[i] + 25000), 2 ):,}')
+        print (f'La factura {rutinaContable[i][0]} tiene un total en pesos de {round( totales[i] if totales[i] >= 600000 else (totales[i] + 25000), 2 ):,.2f}')
     
     print('-------------------------- Fin Registro diario ----------------------------------')
