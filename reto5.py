@@ -9,7 +9,6 @@ def listaPeliculas(link: str) -> str:
     except:
         print('Error al leer el archivo de datos')
     else:
-        # print(datos)
         subset = datos[['Country', 'Language', 'Gross Earnings']]
         tabla = subset.pivot_table(index = ['Country', 'Language'])        
         return tabla.head(10)
